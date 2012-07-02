@@ -223,7 +223,7 @@ if ($_kid['dob'] != '0000-00-00') {
 <br/><br/>
 <h1>Kid Certifications</h1>
 
-<?
+<? //testing git repo
 if ($_certifications) {
 
   if ($_isAdmin) { //start delete form
