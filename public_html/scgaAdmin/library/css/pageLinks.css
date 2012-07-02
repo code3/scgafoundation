@@ -1,0 +1,73 @@
+#pageLinks {
+	clear: both;
+	margin: 8px 0 16px;
+}
+#pageLinks br {
+	clear: both;
+}
+#pl_results {
+	float: left;
+	display: inline;
+	margin: 2px 0 0;
+	font-size: 1em;
+	color: #666;
+}
+
+#pageLinks a, #pageLinks span {
+	display: block;
+	text-align: center;
+	float: left;
+	display: inline;
+	margin: 0 4px 2px 0;
+	height: 17px;
+	padding: 3px 2px 0;
+}
+#pageLinks a.pgl:hover {
+	border: 1px solid #666;	
+}
+#pageLinks a.pgl {
+	width: 30px;
+	border: 1px solid #ccc;
+}
+#pageLinks .ellipsis, #pageLinks .ellipsis:hover {
+	border: none;
+}
+#pageLinks a.curPage {
+	background: #eee;
+	border: 1px solid #666;
+}
+
+#pageLinks a.prevnext{
+	width: 36px;
+}
+
+#pageLinks #resultsPerPage {
+	float: right;
+	display: inline;
+	border: none;
+}
+#pageLinks #resultsPerPage span {
+	margin-top: 1px;
+}
+
+#pageLinks input.pgl_numPerPage {
+	padding: 3px 2px 1px;
+	width: 2em;
+	height: 1.4em;
+	text-align: center;
+	background: #eee;
+	border: 1px solid #ccc;
+	float: left;
+	display: inline;
+	margin-right: 4px;
+}
+
+#pageLinks input[type=hidden] {
+	display: none;
+}
+
+#pageLinks button {
+	margin: -1px 0 0;
+	padding: 2px;
+	font: 1em Verdana, Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,10 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_URI} !(css|library|flash|js|images|testing|ajax|action|tinymce)(/).*
+RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteCond %{REQUEST_URI} !(index|check).php
+RewriteRule ^(.*)$ index.php?p=$1.php [QSA,L]
+RewriteRule ^(.*)/$ index.php?p=$1.php [QSA,L]
+
+
+ErrorDocument 404 /index.php?p=error.php

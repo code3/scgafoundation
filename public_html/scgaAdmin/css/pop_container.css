@@ -1,0 +1,49 @@
+.pop_container {
+	float: left;
+	display: inline;
+	padding: 0 16px 16px;
+}
+
+.pop_container div.selecttag {
+	float: left;
+	display: inline;
+	width: 154px;
+}
+
+.pop_container #pageLinks {
+	width: 700px;
+}
+
+.align_left {
+	text-align: left;
+}
+
+
+.pop_center {
+	padding: 0 32px 16px;
+}
+.pop_center input {
+	float: none;
+	text-align: center;
+}
+
+.pop_container h3 {
+	margin: 0 0 8px;
+	font-size: 1.2em;
+}
+
+.fleft {
+	float: left;
+	display: inline;
+}
+#edit_ticket_container {
+	width: 400px;
+	height: 600px;
+}
+textarea.small-area{
+	width: 120px;
+	height: 50px;
+}
+select.php-cal-year,select.php-cal-month{
+	width:65px;
+}

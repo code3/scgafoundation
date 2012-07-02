@@ -1,0 +1,31 @@
+div.calendar_pop{
+	position:absolute; 
+	visibility:hidden; 
+	background: #eee; 
+	border: 1px solid #999;	
+	padding: 2px 4px;
+}
+
+div.calendar_pop{
+	background:#eee;
+	border: 1px solid #233947;
+	color: #7aadcc;
+}
+div.calendar_pop select {
+	/*border: 1px solid #2b4758;*/
+}
+
+div.calendar_pop {
+	border: 1px solid #333;
+	padding: 4px;
+}
+div.calendar_pop table, div.calendar_pop td {
+	border: none;
+	text-align: right;
+}
+div.calendar_pop select {
+	width: auto;
+}
+div.calendar_pop td.cpCurrentMonthDate, div.calendar_pop td.cpOtherMonthDate, div.calendar_pop td.cpDayColumnHeader {
+	padding: 2px 3px;
+}

@@ -1,0 +1,22 @@
+/* Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, dl, dt, dd, ul, ol, li,
+form, fieldset, legend, input, label, textarea, button, table, caption, thead, tbody, tfoot, tr, th, td { margin: 0; padding: 0; font-family: inherit; font-style: inherit; font-size: 100%; font-weight: inherit; }
+body { background: #fff; color: #333; }
+ul, ol { list-style: none; }
+:link, :visited { text-decoration: none; }
+form, fieldset, img { border: 0; }
+table { border-collapse: collapse; border-spacing: 0; }
+td, th, caption { text-align: left; font-weight: normal; }
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; }
+legend { color: #000; }
+
+/* Global Classes */
+.clear { clear: both; }
+.float-left { float: left; }
+.float-right { float: right; }
+.text-left { text-align:left; }
+.text-right { text-align:right; }
+.text-center { text-align:center; }
+.text-justify { text-align:justify; }
+.hide{ display: none; }

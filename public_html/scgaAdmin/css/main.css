@@ -1,0 +1,443 @@
+body {
+	margin: 0;
+	padding: 0;
+	font: 0.75em Verdana, Arial, Helvetica, sans-serif;
+	color: #333;
+	text-align: left;
+	background: #fff;
+	height: 100%;
+}
+
+#logo-nav {
+	/*width: 920px;
+	margin: 0 auto;
+	overflow: hidden;*/
+	border-bottom: 4px solid #036;
+	
+	min-width: 748px;
+	max-width: 1020px;
+	/*max-width: 920px;*/
+	height: 116px;
+}
+ul#nav {
+	float: left;
+	display: inline;
+	padding: 4px 0;
+	margin: 88px 0 0;
+	font: 0.9em Arial, Helvetica, sans-serif;
+}
+ul#nav li {
+	display: inline;
+	margin: 0 2px;
+}
+ul#nav li a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #036;
+	padding: 4px 2px;
+}
+ul#nav li a:hover {
+	background: #eee;
+}
+ul#nav li a.current {
+	background: #036;
+	color: #fff;
+}
+#logo {
+	float: left;
+	display: inline;
+	width: 122px;
+	height: 109px;
+	margin: 0 8px;
+	padding: 2px 0 6px;
+}
+#admin-panel {
+	float: left;
+	display: inline;
+	margin: 92px 0px 0 0;
+	
+	position: absolute;
+	width: 160px;
+}
+#admin-panel h1 {
+	margin: 0;
+	font: 0.9em Arial, Helvetica, sans-serif;
+	color: #999;
+}
+/*#nav-container {
+	position: absolute;
+}*/
+ul#nav li {
+	/*margin: 0 0 4px;
+	border-bottom: 1px solid #eee;*/
+}
+/*ul#nav li.title {
+	padding: 2px 0 3px;
+}
+ul#nav li a {
+	display: block;
+	padding: 3px 0 4px 8px;
+	width: 164px;
+}
+ul#nav li a.current {
+	background: #369;
+	color: #fff;
+}
+ul#nav li a:hover {
+	background: #47a url(../images/right-arrow.gif) right no-repeat;
+	color: #fff;
+}*/
+
+
+#container {
+	margin: 16px auto 16px 8px;
+	font: 0.9em Verdana, Arial, Helvetica, sans-serif;
+	padding: 0 0 32px 16px;
+	
+	min-height: 400px;
+	overflow-y: hidden;
+	
+	
+	min-width: 748px;
+	/*max-width: 920px;*/
+}
+
+#header {
+	height: 92px;
+	margin: 0;
+	background: #fff url(../images/rapidtech.png) no-repeat;
+	background-position: 16px;
+}
+#admin_panel {
+	float: right;
+	display: inline;
+	margin: 72px 16px 0 0;
+	height: 16px;
+}
+
+#main_container {
+	text-align: left;
+	padding: 16px;
+	background: #fff;
+	
+	min-height: 360px;
+}
+
+#footer {
+	width: 800px;
+	margin: 8px auto;
+	border: 1px solid #687d8a;
+	background: #fff;
+	height: 34px;
+	
+	text-align: left;
+}
+#footer_nav {
+	float: left;
+	display: inline;
+	padding: 10px 16px 8px;
+}
+
+#site {
+	float: right;
+	display: inline;
+	padding: 10px 16px 8px;
+}
+
+a {
+	color: #369;
+	text-decoration: none;
+	cursor: pointer;
+}
+a:hover {
+	color: #036;
+}
+
+h1 {
+	font: 1.6em Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	margin: 0 0 12px;
+	color: #036;
+	/*background: url(../images/h.gif) top left no-repeat;
+	padding: 8px 0;*/
+}
+
+br {
+	clear: both;
+}
+
+.hide{
+	display: none;
+}
+
+/* List */
+textarea {
+	width: 400px;
+	height: 120px;
+	margin: 0 0 2px;
+}
+select, input, label, textarea {
+	font: 1em Verdana, Arial, Helvetica, sans-serif;
+	padding: 4px;
+	float: left;
+	display: inline;
+	color: #333;
+}
+input[type=hidden] {
+	display: none;
+}
+label {
+	padding-left: 0;
+	text-align: left;
+	cursor: default;
+}
+input[type=submit], input[type=button] {
+	padding: 6px;
+}
+input.button {
+	padding: 6px;
+}
+input.inline {
+	padding: 6px;
+	margin: -4px 0 0 4px;
+}
+table.list th, table.list td {
+	padding: 4px;
+}
+label, select {
+	width: 125px;
+	margin: 0 2px 2px 0;
+}
+input[type=text]{
+	width: 200px;
+	margin: 0 2px 2px 0;
+}
+input.text {
+	width: 200px;
+	margin: 0 2px 2px 0;
+}
+input.dateText {
+	width: 120px;
+	margin: 0 2px 2px 0;
+}
+input[type=text], input[type=password] {
+	background: #eee;
+	border: 1px solid #ccc;
+}
+input.text, select, textarea {
+	background: #eee;
+	border: 1px solid #ccc;
+}
+select {
+	padding: 3px 2px;
+	/*width: 130px;*/
+	width: auto;
+}
+input.time {
+	width: 28px;
+	margin-right: 2px;
+}
+select.time {
+	width: 50px;
+}
+
+.toggle_title {
+	padding: 4px;
+	background: #eee;
+	display: block;
+	border: 1px solid #999;
+	margin: 4px 0 0;
+}
+.toggle_title, #pageLinks {
+	/*width: 886px;*/
+	min-width: 698px;
+	max-width: 886px;
+	margin-right: 16px;
+}
+#pageLinks {
+	margin-bottom: 8px;
+	margin-right: 24px;
+}
+.toggle_field {
+	display: none;
+	margin: 0 0 8px;
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-width: 0 1px 1px 1px;
+	width: 878px;
+}
+.toggle_field input[type=button] {
+	margin: 4px 0 0;
+}
+
+.listing {
+	margin-right: 16px;
+}
+.listing tr.bg {
+	background: #eee;
+}
+
+.listing tr:hover, .listing tr.bg:hover {
+	background: #ccf;
+}
+
+.listing th {
+	font-weight: bold;
+	background: #ddd;
+	padding: 4px;
+	color: #036;
+}
+
+.listing td {
+	padding: 4px;
+}
+
+
+#export_fields input {
+	float: none;
+}
+
+.enroll-col-left, .lead-col-left {
+	width: 300px;
+}
+.val_error {
+	clear: left;
+	float: left;
+	display: inline;
+	/*margin: 3px 2px 2px 4px;*/
+	margin-left: 132px;
+	padding: 2px 4px 8px;
+	font: 0.8em Verdana, Arial, Helvetica, sans-serif;
+	color: #c33;
+}
+.enroll-col-left div.val_error, .lead-col-left div.val_error {
+	clear: left;
+	float: right;
+	display: inline;
+	min-width: 140px;
+	text-align: right;
+	margin: 0 44px 8px 0;
+}
+
+input.submit-button, input.button {
+	margin: 4px 4px 10px 0;
+}
+input.checkbox {
+	margin: 4px 4px 4px 0;
+}
+label.checkbox {
+	width: auto;
+}
+
+td input[type=text] {
+	width: 100px;
+}
+td.input.text {
+	width: 100px;
+}
+select.ethnicity {
+	font-size: 0.9em;
+}
+
+table.add th {
+	font-size: 0.9em;
+	font-weight: bold;
+}
+table.add td img {
+	margin: -2px 1px 0 -1px;
+}
+td.number {
+	padding-right: 4px;
+}
+
+.details-col {
+	float: left;
+	display: inline;
+	margin-right: 16px;
+}
+.details-col textarea {
+	width: 200px;
+}
+
+input.add-note {
+	margin: 0 0 0 8px;
+}
+select.gender {
+	width: 48px;
+}
+
+label.inline {
+	padding: 0 0 0 8px;
+}
+div.value-2 {
+	float: left;
+	display: inline;
+	width: auto;
+	padding: 4px 0px;
+}
+.success{
+	background: #efd;
+	border: 1px solid #693;
+	color: #060;
+	padding: 12px 16px;
+	font-size: 0.9em;
+	font-weight: bold;
+	border-width: 1px 0;
+	width: 800px;
+}
+
+.error{
+	background: #fee;
+	border: 1px solid #c66;
+	color: #c00;
+	padding: 12px 16px;
+	font-size: 0.9em;
+	font-weight: bold;
+	border-width: 1px 0;
+	width: 800px;
+}
+
+/* Add Tracking Form */
+table.add td.clear-row {
+	padding-right: 10px;
+}
+
+#select_tracking_form label {
+	clear:none;
+	width:50px;
+	margin-left:5px;
+}
+
+/* Tracking Filter Form */
+p.clear-fields {
+	float:left;
+	margin:13px 6px 0;
+}
+
+/* Add Kids Form */
+table.add tr.new-row {
+	background:none repeat scroll 0 0 #DDD;
+}
+table.add tr.new-row th {
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+table.add td.game-club {
+	border: 1px solid black;
+}
+#select_kids_form select.gender{
+	margin-top: 5px;
+}
+
+#select_kids_form select.certification-status{
+	margin-bottom: 5px;
+}
+
+#select_kids_form label.golf-certified, #select_kids_form label.game-club {
+	margin-left:5px;
+}
+
+/* Kids Details Form */
+div.column{
+	margin-left: 131px;
+}

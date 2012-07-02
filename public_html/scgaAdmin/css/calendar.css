@@ -1,0 +1,76 @@
+.emg-form.calendar .columns label, .emg-form.calendar .columns select.year, .emg-form.calendar .columns select.month, .columns select.hour, .columns select.minute, .columns select.ampm {
+	width: 60px;
+}
+
+#calendar thead th {
+	padding: 4px 0;
+}
+#calendar tr, #calendar tbody tr:hover, #calendar tfoot tr:hover {
+	background-image: none;
+	border: none;
+}
+#calendar th, #calendar td {
+	padding: 0;
+	text-align: center;
+	vertical-align: middle;
+	width: 66px;
+}
+#calendar thead th a {
+	color: #369;
+	background: none;
+}
+#calendar thead th a:hover {
+	color: #036;
+}
+#calendar tr:hover {
+	background: none;
+}
+#calendar tr.days td a, #calendar tr.days td a span.day {
+	display: block;
+}
+#calendar tr.days td {
+	border: 1px solid #ddd;
+}
+#calendar tr.days td.today, #calendar tr.days td:hover {
+	border: 1px solid #aaa;
+}
+#calendar tr.days td.no-day {
+	border-color: #fff;
+	border-width: 1px 0 0;
+}
+#calendar tr.days td a span.day {
+	padding: 16px 0;
+}
+#calendar tr.days td.today a, #calendar tr.days td a:hover {
+	background: url("../images/bg-tr-hover.png") repeat-x left bottom;
+}
+
+ol.nav-calendar {
+	padding: 0;
+	list-style: none;
+}
+ol.nav-calendar li {
+	float: left;
+	padding-right: 6px;
+	border-right: 1px solid #ccc;
+	margin-right: 6px;
+}
+ol.nav-calendar li.last {
+	padding: 0;
+	border: none;
+	margin: 0;
+}
+.reset-calendar{
+	clear:both;
+}
+
+#calendar th[scope="col"] {
+	background:none repeat scroll 0 0 #DDDDDD;
+	color:#003366;
+	font-weight:bold;
+	padding:4px;
+}
+
+.calendar label {
+	font-weight:bold;
+}

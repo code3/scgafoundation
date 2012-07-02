@@ -1,0 +1,28 @@
+ul#nav_admin {
+	list-style-type: none;
+	margin: 0;
+	padding: 0 8px;
+	height: 32px;
+	background: url(../images/nav/menu_bg.gif);
+}
+
+ul#nav_admin li {
+	float: left;
+	display: inline;
+}
+
+ul#nav_admin li a {
+	display: block;
+	width: 100px;
+	height: 24px;
+	text-align: center;
+	padding: 8px 0 0;
+	
+	font: bold 1em Tahoma, Verana, Arial, Helvetica, sans-serif;
+	color: #fff;
+	text-decoration: none;
+}
+ul#nav_admin li a:hover, ul#nav_admin li a.current {
+	background: url(../images/nav/menu_bg_hover.gif);
+	color: #233947;
+}

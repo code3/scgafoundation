@@ -1,0 +1,106 @@
+<?
+require ('parts/update_alert.php');
+
+if($_isAdmin){
+	$month = date('m');
+	
+	if($month == '01' || $month == '02' || $month == '03'){
+		$newYear = date('Y');
+	}
+	else{
+		$newYear = date('Y') + 1;
+	}
+	?>
+    <h1>Admin Functions</h1>
+    <ul class="admin-options">
+        <li class="option">
+        
+        
+            <a onclick="confirm2(event, 'Add Certification Year?','addYear(\'<?= $newYear ?>\',\'1\')')">
+            <span class="name">Reset Certification Statuses</span>
+            <span class="description">If a child already has a certification for <?= $newYear ?>, this will have no effect,
+	otherwise if no certification record currently exists for <?= $newYear ?>, this will duplicate <?= $newYear - 1 ?>
+	certification status for <?= $newYear ?>. If no certification exists for <?= $newYear - 1 ?>, <?= $newYear ?> certification status will default to "Not certified".</span>
+            </a>
+            
+            
+        </li>
+        <li class="option">
+            <a href="<?= CLIENTROOT ?>/online_donation/main">
+            <span class="name">Donations</span>
+            <span class="description">View online donations.</span>
+            </a>
+        </li>
+        
+    </ul>
+    <ul class="admin-options">
+        <li class="option">
+            <a href="<?= CLIENTROOT ?>/kids/upload_csv">
+            <span class="name">Upload CSV File</span>
+            <span class="description">Import and update kids by uploading a .csv file.</span>
+            </a>
+        </li>
+    </ul>
+        
+    <br />
+	<h1>Users</h1>
+    <input type="button" onclick="showAdd('user','')" value="Add User" />
+	<br /><br />
+	<form name="del_user_form" id="del_user_form" action="<?= CLIENTROOT ?>/action/user/delete-users/" method="post">
+	<table class="listing">
+		<tr>
+			<th></th>
+			<th></th>
+			<th>Username</th>
+			<th>Group</th>
+		</tr>
+		<?
+		if($users){
+			$rowCount = 0;
+			foreach ($users as $user) {
+				?>
+				<tr<? if ($rowCount % 2 == 1) { ?> class="bg"<? } ?>>
+					<td><input type="checkbox" id="checkBox_<?= $user['loginid'] ?>" value="<?= $user['loginid'] ?>" name="checked_user[]" /></td>
+					<td><a onclick="confirm2(event, 'Are you sure you want to<br /> delete <?= $user['login'] ?>?', '$(\'checkBox_<?= $user['loginid'] ?>\').checked = true; $(\'del_user_form\').submit()')" class="customTitle" title="Delete"><img src="<?= CLIENTROOT ?>/images/icons/24-em-cross.png" alt="Delete" /></a></td>
+					<td><?= $user['login'] ?></td>
+					<td><?= $user['name'] ?></td>
+				</tr>
+				<?
+				$rowCount++;
+			}
+		}
+		?>
+	</table>
+	<br />
+	<input type="checkbox" id="checkAllBtn" onclick="checkAll('checked_user[]', this.checked);" />&nbsp;Check All
+	<br />
+	<a onclick="confirm2(event, 'Delete all checked users?', '$(\'del_user_form\').submit()')" class="customTitle" title="Delete Checked"><img src="<?= CLIENTROOT ?>/images/icons/24-em-cross.png" alt="Delete Checked" /></a>
+	</form>
+    <?
+}
+else{
+	?>
+	<h1>Users</h1>
+	<table class="listing">
+		<tr>
+			<th>Username</th>
+			<th>Group</th>
+		</tr>
+		<?
+		if($users){
+			$rowCount = 0;
+			foreach ($users as $user) {
+				?>
+				<tr<? if ($rowCount % 2 == 1) { ?> class="bg"<? } ?>>
+					<td><?= $user['login'] ?></td>
+					<td><?= $user['name'] ?></td>
+				</tr>
+				<?
+				$rowCount++;
+			}
+		}
+		?>
+	</table>
+	<?
+}
+?>
